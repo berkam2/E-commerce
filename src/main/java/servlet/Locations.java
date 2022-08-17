@@ -27,6 +27,7 @@ public class Locations extends HttpServlet {
     VehiculeDao vehiDao = new VehiculeDao();
     LocationDao locDao = new LocationDao();
     TarifsDao tarifDao = new TarifsDao();
+    LivreDao livDao = new LivreDao();
   
 	
     /**

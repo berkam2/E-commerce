@@ -4,6 +4,7 @@ public class Statut {
 
 	private int idStatut;
 	private String libelle;
+	
 	public int getIdStatut() {
 		return idStatut;
 	}

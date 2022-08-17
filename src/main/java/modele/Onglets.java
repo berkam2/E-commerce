@@ -10,6 +10,7 @@ public class Onglets {
 	}
 	public void setIdOnglet(int idOnglet) {
 		this.idOnglet = idOnglet;
+		
 	}
 	public String getLibelle() {
 		return libelle;

@@ -1,49 +1,7 @@
 <c:import url="../nav/enteteAdmin.jsp"></c:import>
 
 
-<div class="container d-flex flex-wrap">
-  
-  <table class="table caption-top">
-	<caption> Les Utilisateurs </caption>
-<thead>
-	<tr>
-	<th scope="col">id</th>
-	<th scope="col">Nom</th>
-	<th scope="col">Prenom</th>
-	<th scope="col">Statut</th>
-	<th scope="col">Email</th>
-	<th scope="col">Age</th>
-	<th scope="col">Telephone</th>
-	<th scope="col">Adresse</th>
-	<th scope="col">Obtention permis</th>
-	<th scope="col">inscription</th>
-	<th scope="col">isVisible</th>
-	<th scope="col">Permis</th>
-	
-	</tr>
-</thead>
 
-  <c:forEach items="${users}" var="user">
-<tbody>
-	<tr>
-	<td><c:out value="${user.idUser}"></c:out></td>
-	<td><c:out value="${user.nom}"></c:out></td>
-	<td><c:out value="${user.prenom}"></c:out></td>
-	<td><c:out value="${user.idStatut}"></c:out></td>
-	<td><c:out value="${user.email}"></c:out></td>
-	<td><c:out value="${user.age}"></c:out></td>
-	<td><c:out value="${user.telephone}"></c:out></td>
-	<td><c:out value="${user.adresse}"></c:out></td>
-	<td><c:out value="${user.obtentionPermis}"></c:out></td>
-	<td><c:out value="${user.inscription}"></c:out></td>
-	<td><c:out value="${user.visible}"></c:out></td>
-	<td><c:out value="${user.permis}"></c:out></td>
-	<td> <a href="Edit?idUser=<c:out value='${user.idUser}'/>" class="btn btn-primary"> Modifier </a></td>
-	<td> <a href="Delete?idUser=<c:out value='${user.idUser}'/>" class="btn btn-primary"> Supprimer </a></td>
-	</tr>
-</tbody>
-  </c:forEach> 
- 	</table>
   <c:if test="${empty users}">
   <div class="alert alert-info" role="alert">
   Erreur 237 (pas encore configuré)

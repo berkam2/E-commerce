@@ -226,7 +226,7 @@
                  
              </div>
              
-             <label>Disponnibilité <span class="color-red">*</span> </label>
+             <label>Disponibilité <span class="color-red">*</span> </label>
              <div class="row margin-bottom-20">
                  <div class="col-md-6 col-md-offset-0">
                      <input class="form-control" type="text" name="availability">
